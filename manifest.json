@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 3,
+
+    "name": "Text Highlighter",
+    "description": "Hightlight certain text",
+    "version": "0.1.0",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting",
+        "contextMenus"
+    ],
+    "host_permissions": ["*://*/*"],
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "options_page": "./options.html"
+}
